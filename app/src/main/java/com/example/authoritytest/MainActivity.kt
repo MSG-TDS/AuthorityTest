@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
                     startProcess()
                 } else{
-                    finish()
+                    Toast.makeText(this, "Permission Denied", Toast.LENGTH_LONG).show()
                 }
             }
         }
